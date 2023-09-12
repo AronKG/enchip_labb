@@ -1,0 +1,65 @@
+2023-09-01 14:07:16,294 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 256438560 Bytes (874512384)
+2023-09-01 14:07:19,854 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 279997256 Bytes (874512384)
+2023-09-01 14:07:22,459 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 348681032 Bytes (874512384)
+2023-09-01 14:07:22,977 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-09-01 14:07:22,977 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-09-01 14:07:22,977 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-09-01 14:07:22,978 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-09-01 14:07:22,979 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-09-01 14:07:22,981 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-09-01 14:07:23,292 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\MXTmpFiles\license.tmp_save
+2023-09-01 14:07:23,515 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\MXTmpFiles\license.tmp
+2023-09-01 14:07:23,658 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\MXTmpFiles\gpio.tmp_save
+2023-09-01 14:07:23,864 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\MXTmpFiles\gpio.tmp
+2023-09-01 14:07:24,057 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Src\stm32f4xx_it.c_save
+2023-09-01 14:07:24,476 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Src\stm32f4xx_it.c
+2023-09-01 14:07:24,508 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Inc\stm32f4xx_it.h_save
+2023-09-01 14:07:24,676 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Inc\stm32f4xx_it.h
+2023-09-01 14:07:24,791 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Src\stm32f4xx_hal_msp.c_save
+2023-09-01 14:07:25,005 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Src\stm32f4xx_hal_msp.c
+2023-09-01 14:07:25,040 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\MXTmpFiles\system.tmp_save
+2023-09-01 14:07:25,145 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\MXTmpFiles\system.tmp
+2023-09-01 14:07:25,232 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Inc\stm32f4xx_hal_conf.h_save
+2023-09-01 14:07:25,401 [INFO] CodeEngine:335 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Inc\stm32f4xx_hal_conf.h
+2023-09-01 14:07:25,552 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Inc\main.h_save
+2023-09-01 14:07:25,743 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Inc\main.h
+2023-09-01 14:07:25,783 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Src\main.c_save
+2023-09-01 14:07:26,226 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Src\main.c
+2023-09-01 14:07:27,979 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 949mS.
+2023-09-01 14:07:27,987 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-09-01 14:07:28,268 [INFO] ConfigFileManager:1457 - The Die is : DIE433
+2023-09-01 14:07:31,055 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3068mS.
+2023-09-01 14:07:31,058 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-09-01 14:07:31,067 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-09-01 15:09:20,557 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 630530656 Bytes (775946240)
+2023-09-01 15:09:28,009 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 242132144 Bytes (775946240)
+2023-09-01 15:09:28,576 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-09-01 15:09:28,577 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-09-01 15:09:28,577 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-09-01 15:09:28,577 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-09-01 15:09:28,577 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-09-01 15:09:28,580 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-09-01 15:09:28,983 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\MXTmpFiles\license.tmp_save
+2023-09-01 15:09:29,145 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\MXTmpFiles\license.tmp
+2023-09-01 15:09:29,289 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\MXTmpFiles\gpio.tmp_save
+2023-09-01 15:09:29,416 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\MXTmpFiles\gpio.tmp
+2023-09-01 15:09:29,671 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Src\stm32f4xx_it.c_save
+2023-09-01 15:09:29,974 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Src\stm32f4xx_it.c
+2023-09-01 15:09:30,005 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Inc\stm32f4xx_it.h_save
+2023-09-01 15:09:30,139 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Inc\stm32f4xx_it.h
+2023-09-01 15:09:30,255 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Src\stm32f4xx_hal_msp.c_save
+2023-09-01 15:09:30,444 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Src\stm32f4xx_hal_msp.c
+2023-09-01 15:09:30,466 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\MXTmpFiles\system.tmp_save
+2023-09-01 15:09:30,572 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\MXTmpFiles\system.tmp
+2023-09-01 15:09:30,654 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Inc\stm32f4xx_hal_conf.h_save
+2023-09-01 15:09:30,780 [INFO] CodeEngine:335 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Inc\stm32f4xx_hal_conf.h
+2023-09-01 15:09:30,915 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Inc\main.h_save
+2023-09-01 15:09:31,135 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Inc\main.h
+2023-09-01 15:09:31,170 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Src\main.c_save
+2023-09-01 15:09:31,415 [INFO] CodeEngine:279 - Generated code: C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\Core\Src\main.c
+2023-09-01 15:09:32,612 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 722mS.
+2023-09-01 15:09:32,621 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-09-01 15:09:33,156 [INFO] ConfigFileManager:1457 - The Die is : DIE433
+2023-09-01 15:09:35,642 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3021mS.
+2023-09-01 15:09:35,644 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 2mS.
+2023-09-01 15:09:35,653 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.

@@ -1,0 +1,10 @@
+13:15:47 **** Incremental Build of configuration Debug for project labb2_tarning ****
+make -j8 all 
+arm-none-eabi-size   labb2_tarning.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13484	    112	   1976	  15572	   3cd4	labb2_tarning.elf
+Finished building: default.size.stdout
+ 
+
+13:15:48 Build Finished. 0 errors, 0 warnings. (took 843ms)
+
