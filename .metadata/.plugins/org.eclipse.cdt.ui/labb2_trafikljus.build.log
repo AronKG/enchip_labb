@@ -1,0 +1,17 @@
+16:13:19 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc -o "labb2_trafikljus.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\labb2_trafikljus\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb2_trafikljus.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: labb2_trafikljus.elf
+ 
+arm-none-eabi-size   labb2_trafikljus.elf 
+arm-none-eabi-objdump -h -S  labb2_trafikljus.elf  > "labb2_trafikljus.list"
+   text	   data	    bss	    dec	    hex	filename
+  12736	     20	   1740	  14496	   38a0	labb2_trafikljus.elf
+Finished building: default.size.stdout
+ 
+Finished building: labb2_trafikljus.list
+ 
+
+16:13:20 Build Finished. 0 errors, 0 warnings. (took 1s.142ms)
+

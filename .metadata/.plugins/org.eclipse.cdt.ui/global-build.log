@@ -1,445 +1,86 @@
-15:23:27 **** Build of configuration Debug for project Lab0_Blinky ****
+16:04:57 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
 make -j8 all 
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f401retx.d" -MT"Core/Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f401retx.o" "../Core/Startup/startup_stm32f401retx.s"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:254:6: warning: unused variable 'last_button_press' [-Wunused-variable]
+  254 |  int last_button_press = 0;
+      |      ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:253:11: warning: unused variable 'last_tick' [-Wunused-variable]
+  253 |  uint32_t last_tick = 0;
+      |           ^~~~~~~~~
+../Core/Src/main.c:252:11: warning: unused variable 'curr_tick' [-Wunused-variable]
+  252 |  uint32_t curr_tick = 0;
+      |           ^~~~~~~~~
+arm-none-eabi-gcc -o "labb2_trafikljus.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\labb2_trafikljus\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb2_trafikljus.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: labb2_trafikljus.elf
+ 
+arm-none-eabi-size   labb2_trafikljus.elf 
+arm-none-eabi-objdump -h -S  labb2_trafikljus.elf  > "labb2_trafikljus.list"
+   text	   data	    bss	    dec	    hex	filename
+  12688	     20	   1740	  14448	   3870	labb2_trafikljus.elf
+Finished building: default.size.stdout
+ 
+Finished building: labb2_trafikljus.list
+ 
+16:05:07 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
+make -j8 all 
+arm-none-eabi-size   labb2_trafikljus.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12688	     20	   1740	  14448	   3870	labb2_trafikljus.elf
+Finished building: default.size.stdout
+ 
+16:06:02 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
+make -j8 all 
+arm-none-eabi-size   labb2_trafikljus.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12688	     20	   1740	  14448	   3870	labb2_trafikljus.elf
+Finished building: default.size.stdout
+ 
+16:07:24 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
+make -j8 all 
+arm-none-eabi-size   labb2_trafikljus.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12688	     20	   1740	  14448	   3870	labb2_trafikljus.elf
+Finished building: default.size.stdout
+ 
+16:08:32 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
+make -j8 all 
+arm-none-eabi-size   labb2_trafikljus.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12688	     20	   1740	  14448	   3870	labb2_trafikljus.elf
+Finished building: default.size.stdout
+ 
+16:09:22 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
+make -j8 all 
+arm-none-eabi-size   labb2_trafikljus.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12688	     20	   1740	  14448	   3870	labb2_trafikljus.elf
+Finished building: default.size.stdout
+ 
+16:12:43 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
+make -j8 all 
 arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
-arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
-arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
-arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:99:29: error: 'LF2_GPIO_Port' undeclared (first use in this function); did you mean 'LD2_GPIO_Port'?
-   99 |           HAL_GPIO_WritePin(LF2_GPIO_Port,LD2_Pin, GPIO_PIN_SEt);
-      |                             ^~~~~~~~~~~~~
-      |                             LD2_GPIO_Port
-../Core/Src/main.c:99:29: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/main.c:99:52: error: 'GPIO_PIN_SEt' undeclared (first use in this function); did you mean 'GPIO_PIN_SET'?
-   99 |           HAL_GPIO_WritePin(LF2_GPIO_Port,LD2_Pin, GPIO_PIN_SEt);
-      |                                                    ^~~~~~~~~~~~
-      |                                                    GPIO_PIN_SET
-../Core/Src/main.c:101:29: error: 'LD2_GPIO' undeclared (first use in this function)
-  101 |           HAL_GPIO_WritePin(LD2_GPIO,LD2_Pin, GPIO_PIN_RESET);
-      |                             ^~~~~~~~
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-make: *** Waiting for unfinished jobs....
+../Core/Src/stm32f4xx_it.c: In function 'SysTick_Handler':
+../Core/Src/stm32f4xx_it.c:190:26: error: expected ';' before '}' token
+  190 |      my_systick_handler()
+      |                          ^
+      |                          ;
+  191 |   /* USER CODE END SysTick_IRQn 1 */
+  192 | }
+      | ~                         
+make: *** [Core/Src/subdir.mk:34: Core/Src/stm32f4xx_it.o] Error 1
 "make -j8 all" terminated with exit code 2. Build might be incomplete.
-15:23:42 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
+16:13:19 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:99:29: error: 'LF2_GPIO_Port' undeclared (first use in this function); did you mean 'LD2_GPIO_Port'?
-   99 |           HAL_GPIO_WritePin(LF2_GPIO_Port,LD2_Pin, GPIO_PIN_SEt);
-      |                             ^~~~~~~~~~~~~
-      |                             LD2_GPIO_Port
-../Core/Src/main.c:99:29: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/main.c:99:52: error: 'GPIO_PIN_SEt' undeclared (first use in this function); did you mean 'GPIO_PIN_SET'?
-   99 |           HAL_GPIO_WritePin(LF2_GPIO_Port,LD2_Pin, GPIO_PIN_SEt);
-      |                                                    ^~~~~~~~~~~~
-      |                                                    GPIO_PIN_SET
-../Core/Src/main.c:101:29: error: 'LD2_GPIO' undeclared (first use in this function)
-  101 |           HAL_GPIO_WritePin(LD2_GPIO,LD2_Pin, GPIO_PIN_RESET);
-      |                             ^~~~~~~~
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-15:25:06 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:99:29: error: 'LF2_GPIO_Port' undeclared (first use in this function); did you mean 'LD2_GPIO_Port'?
-   99 |           HAL_GPIO_WritePin(LF2_GPIO_Port,LD2_Pin, GPIO_PIN_SEt);
-      |                             ^~~~~~~~~~~~~
-      |                             LD2_GPIO_Port
-../Core/Src/main.c:99:29: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/main.c:99:52: error: 'GPIO_PIN_SEt' undeclared (first use in this function); did you mean 'GPIO_PIN_SET'?
-   99 |           HAL_GPIO_WritePin(LF2_GPIO_Port,LD2_Pin, GPIO_PIN_SEt);
-      |                                                    ^~~~~~~~~~~~
-      |                                                    GPIO_PIN_SET
-../Core/Src/main.c:101:29: error: 'LD2_GPIO' undeclared (first use in this function)
-  101 |           HAL_GPIO_WritePin(LD2_GPIO,LD2_Pin, GPIO_PIN_RESET);
-      |                             ^~~~~~~~
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-15:26:49 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-   7748	     20	   1636	   9404	   24bc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-15:27:02 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-size   Lab0_Blinky.elf 
-   text	   data	    bss	    dec	    hex	filename
-   7748	     20	   1636	   9404	   24bc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-15:37:56 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-   7748	     20	   1636	   9404	   24bc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-15:38:26 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-   7748	     20	   1636	   9404	   24bc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-16:27:26 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-   7748	     20	   1636	   9404	   24bc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-16:31:25 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:108:21: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-  108 |           str_len = sprintf(str, â€?Blinky has succeeded %d times!\r\nâ€?, nblink);
-      |                     ^~~~~~~
-../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-   20 | #include "main.h"
-  +++ |+#include <stdio.h>
-   21 | 
-../Core/Src/main.c:108:21: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
-  108 |           str_len = sprintf(str, â€?Blinky has succeeded %d times!\r\nâ€?, nblink);
-      |                     ^~~~~~~
-../Core/Src/main.c:108:21: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-../Core/Src/main.c:108:34: error: stray '\342' in program
-  108 |           str_len = sprintf(str, â€?Blinky has succeeded %d times!\r\nâ€?, nblink);
-      |                                  ^
-../Core/Src/main.c:108:35: error: 'Blinky' undeclared (first use in this function)
-  108 |           str_len = sprintf(str, â€?Blinky has succeeded %d times!\r\nâ€?, nblink);
-      |                                   ^~~~~~
-../Core/Src/main.c:108:35: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/main.c:108:41: error: expected ')' before 'has'
-  108 |           str_len = sprintf(str, â€?Blinky has succeeded %d times!\r\nâ€?, nblink);
-      |                            ~            ^~~~
-      |                                         )
-../Core/Src/main.c:108:65: error: stray '\' in program
-  108 |           str_len = sprintf(str, â€?Blinky has succeeded %d times!\r\nâ€?, nblink);
-      |                                                                 ^
-../Core/Src/main.c:108:67: error: stray '\' in program
-  108 |           str_len = sprintf(str, â€?Blinky has succeeded %d times!\r\nâ€?, nblink);
-      |                                                                   ^
-../Core/Src/main.c:108:69: error: stray '\342' in program
-  108 |           str_len = sprintf(str, â€?Blinky has succeeded %d times!\r\nâ€?, nblink);
-      |                                                                     ^
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-16:33:45 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:108:21: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-  108 |           str_len = sprintf(str, "Blinky has succeeded %d times!\r\n", nblink);
-      |                     ^~~~~~~
-../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-   20 | #include "main.h"
-  +++ |+#include <stdio.h>
-   21 | 
-../Core/Src/main.c:108:21: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
-  108 |           str_len = sprintf(str, "Blinky has succeeded %d times!\r\n", nblink);
-      |                     ^~~~~~~
-../Core/Src/main.c:108:21: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-  10980	    100	   1972	  13052	   32fc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-16:35:16 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-  10980	    100	   1972	  13052	   32fc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-12:13:18 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-  10980	    100	   1972	  13052	   32fc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-12:13:44 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-  10980	    100	   1972	  13052	   32fc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-12:14:15 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-  10980	    100	   1972	  13052	   32fc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-12:14:44 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-  10980	    100	   1972	  13052	   32fc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-12:33:51 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-  10980	    100	   1972	  13052	   32fc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-12:56:53 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-size   Lab0_Blinky.elf 
-   text	   data	    bss	    dec	    hex	filename
-  10980	    100	   1972	  13052	   32fc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-12:56:58 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-size   Lab0_Blinky.elf 
-   text	   data	    bss	    dec	    hex	filename
-  10980	    100	   1972	  13052	   32fc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-12:57:24 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-size   Lab0_Blinky.elf 
-   text	   data	    bss	    dec	    hex	filename
-  10980	    100	   1972	  13052	   32fc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-13:22:19 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-size   Lab0_Blinky.elf 
-   text	   data	    bss	    dec	    hex	filename
-  10980	    100	   1972	  13052	   32fc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-13:23:26 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-size   Lab0_Blinky.elf 
-   text	   data	    bss	    dec	    hex	filename
-  10980	    100	   1972	  13052	   32fc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-13:28:31 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-size   Lab0_Blinky.elf 
-   text	   data	    bss	    dec	    hex	filename
-  10980	    100	   1972	  13052	   32fc	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-13:48:14 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-  10988	    100	   1972	  13060	   3304	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-14:07:34 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
 arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
+arm-none-eabi-gcc -o "labb2_trafikljus.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\labb2_trafikljus\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb2_trafikljus.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: labb2_trafikljus.elf
  
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
+arm-none-eabi-size   labb2_trafikljus.elf 
+arm-none-eabi-objdump -h -S  labb2_trafikljus.elf  > "labb2_trafikljus.list"
    text	   data	    bss	    dec	    hex	filename
-  11028	    100	   1972	  13100	   332c	Lab0_Blinky.elf
+  12736	     20	   1740	  14496	   38a0	labb2_trafikljus.elf
 Finished building: default.size.stdout
  
-Finished building: Lab0_Blinky.list
- 
-14:23:07 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-size   Lab0_Blinky.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11028	    100	   1972	  13100	   332c	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-14:23:24 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-size   Lab0_Blinky.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11028	    100	   1972	  13100	   332c	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-14:56:35 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-  11020	    100	   1972	  13092	   3324	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-15:10:42 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:104:11: error: 'nblink' undeclared (first use in this function)
-  104 |           nblink++;
-      |           ^~~~~~
-../Core/Src/main.c:104:11: note: each undeclared identifier is reported only once for each function it appears in
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-15:13:26 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:101:43: error: 'lad2_Pin' undeclared (first use in this function); did you mean 'lad_Pin'?
-  101 |           HAL_GPIO_WritePin(LD2_GPIO_Port,lad2_Pin, GPIO_PIN_RESET);
-      |                                           ^~~~~~~~
-      |                                           lad_Pin
-../Core/Src/main.c:101:43: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Src/main.c:104:11: error: 'nblink' undeclared (first use in this function)
-  104 |           nblink++;
-      |           ^~~~~~
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-15:17:30 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:105:11: error: 'nblink' undeclared (first use in this function)
-  105 |           nblink++;
-      |           ^~~~~~
-../Core/Src/main.c:105:11: note: each undeclared identifier is reported only once for each function it appears in
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-15:18:18 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Lab0_Blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\Lab0_Blinky\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab0_Blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Lab0_Blinky.elf
- 
-arm-none-eabi-size   Lab0_Blinky.elf 
-arm-none-eabi-objdump -h -S  Lab0_Blinky.elf  > "Lab0_Blinky.list"
-   text	   data	    bss	    dec	    hex	filename
-  11020	    100	   1972	  13092	   3324	Lab0_Blinky.elf
-Finished building: default.size.stdout
- 
-Finished building: Lab0_Blinky.list
- 
-15:20:27 **** Incremental Build of configuration Debug for project Lab0_Blinky ****
-make -j8 all 
-arm-none-eabi-size   Lab0_Blinky.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11020	    100	   1972	  13092	   3324	Lab0_Blinky.elf
-Finished building: default.size.stdout
+Finished building: labb2_trafikljus.list
  
