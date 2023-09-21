@@ -306,3 +306,18 @@ java.io.FileNotFoundException: C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\l
 
 !ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-09-15 16:13:30.212
 !MESSAGE Existing sessions are:
+!SESSION 2023-09-16 21:57:18.878 -----------------------------------------------
+eclipse.buildId=Version 1.13.1
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-09-16 21:57:34.536
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-09-16 21:57:34.551
+!MESSAGE Log4j2 initialized with config file C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-09-16 21:57:45.800
+!MESSAGE Started RMI Server, listening on port 41337
