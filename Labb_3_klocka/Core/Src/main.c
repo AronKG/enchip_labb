@@ -21,7 +21,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
+#include <string.h>
+#include "quad_sseg.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -40,22 +42,128 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+TIM_HandleTypeDef htim3;
+
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
+uint16_t button_exti_count;
+uint16_t button_debounced_count;
+uint16_t unhandled_exti;
 
+uint8_t hours = 0;
+uint8_t minutes = 0;
+uint8_t seconds = 0;
+
+
+TIM_HandleTypeDef htm;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_TIM3_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+
+void uart_print_menu(){
+	    char menu_str[100];
+
+	    sprintf(menu_str,
+            "Choose the menu:\r\n"
+	    	"1. Clock mode:\r\n"
+	        "2. Button mode:\r\n");
+
+	    HAL_UART_Transmit(&huart2, (uint8_t*) menu_str, strlen(menu_str), HAL_MAX_DELAY);
+}
+
+int uart_get_menu_choice()
+{
+	char str[1];
+	uint16_t str_len = 1;
+	HAL_UART_Receive(&huart2,(uint8_t *) str, str_len,HAL_MAX_DELAY);
+	int ret = -1;
+	sscanf(str, "%d", &ret);
+
+
+	return ret;
+}
+
+void uart_print_bad_choice()
+{
+	char bad_choice_str[]="Felaktig inmatning. Vänligen välj ett giltigt alternativ 1 eller 2.\r\n";
+	HAL_UART_Transmit(&huart2, (uint8_t*)bad_choice_str, sizeof(bad_choice_str) - 1, HAL_MAX_DELAY);
+}
+
+void clock_mode()
+{
+	/*** init segment ***/
+	/*** main loop ***/
+	while (1)
+	{
+	}
+}
+
+void button_mode()
+{
+	/*** init segment ***/
+
+	/*** main loop ***/
+
+	int b1_pressed;
+	int pressed;
+	while (1)
+	{
+		/* deal with debouncing the button... */
+
+		// check b1 button (on board, active low)
+		b1_pressed = GPIO_PIN_RESET== HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin);
+
+
+		if (unhandled_exti) // was set in interrupt
+		{
+			uint16_t BOUNCE_DELAY_MS = 10;
+			HAL_Delay(BOUNCE_DELAY_MS); // value measured by probing
+			pressed = GPIO_PIN_RESET == HAL_GPIO_ReadPin(MY_BTN_GPIO_Port, MY_BTN_Pin);
+				if (pressed)
+				{
+					button_debounced_count++;
+
+				}
+			unhandled_exti = 0;
+		}
+
+		if(b1_pressed){
+			qs_put_big_num(button_exti_count);
+
+
+		}
+		else{
+			qs_put_big_num(button_debounced_count);
+
+		}
+	}
+
+}
+
+//#define MY_BTN_Pin GPIO_PIN_2
+//#define MY_BTN_GPIO_Port GPIOC
+
+void HAL_GPIO_EXTI_Callback( uint16_t GPIO_Pin )
+{
+	if(GPIO_Pin ==  MY_BTN_Pin)
+	{
+		button_exti_count++;
+		unhandled_exti = 1;
+	}
+
+}
 
 /* USER CODE END 0 */
 
@@ -88,7 +196,11 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
+
+
+
 
   /* USER CODE END 2 */
 
@@ -96,6 +208,25 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+
+	  uart_print_menu();
+	  int menu_choice = uart_get_menu_choice();
+	  {
+		  switch (menu_choice)
+			  {
+			  case 1:
+				  clock_mode();
+			  break;
+			  case 2:
+				  button_mode();
+			  break;
+			  default: uart_print_bad_choice();
+			  break;
+			  }
+	    }
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -150,6 +281,51 @@ void SystemClock_Config(void)
 }
 
 /**
+  * @brief TIM3 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM3_Init(void)
+{
+
+  /* USER CODE BEGIN TIM3_Init 0 */
+
+  /* USER CODE END TIM3_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM3_Init 1 */
+
+  /* USER CODE END TIM3_Init 1 */
+  htim3.Instance = TIM3;
+  htim3.Init.Prescaler = 1000-1;
+  htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim3.Init.Period = 42000-1;
+  htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM3_Init 2 */
+
+  /* USER CODE END TIM3_Init 2 */
+
+}
+
+/**
   * @brief USART2 Initialization Function
   * @param None
   * @retval None
@@ -200,13 +376,23 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOC, SEG_DIO_Pin|SEG_CLK_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : B1_Pin */
-  GPIO_InitStruct.Pin = B1_Pin;
+  /*Configure GPIO pins : B1_Pin MY_BTN_Pin */
+  GPIO_InitStruct.Pin = B1_Pin|MY_BTN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : SEG_DIO_Pin SEG_CLK_Pin */
+  GPIO_InitStruct.Pin = SEG_DIO_Pin|SEG_CLK_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pin : LD2_Pin */
   GPIO_InitStruct.Pin = LD2_Pin;
@@ -214,6 +400,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI2_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI2_IRQn);
+
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

@@ -1,86 +1,14 @@
-16:04:57 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
+12:44:51 **** Incremental Build of configuration Debug for project Labb3_clk ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:254:6: warning: unused variable 'last_button_press' [-Wunused-variable]
-  254 |  int last_button_press = 0;
-      |      ^~~~~~~~~~~~~~~~~
-../Core/Src/main.c:253:11: warning: unused variable 'last_tick' [-Wunused-variable]
-  253 |  uint32_t last_tick = 0;
-      |           ^~~~~~~~~
-../Core/Src/main.c:252:11: warning: unused variable 'curr_tick' [-Wunused-variable]
-  252 |  uint32_t curr_tick = 0;
-      |           ^~~~~~~~~
-arm-none-eabi-gcc -o "labb2_trafikljus.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\labb2_trafikljus\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb2_trafikljus.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: labb2_trafikljus.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Labb3_clk.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\Labb_3_klocka\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Labb3_clk.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Labb3_clk.elf
  
-arm-none-eabi-size   labb2_trafikljus.elf 
-arm-none-eabi-objdump -h -S  labb2_trafikljus.elf  > "labb2_trafikljus.list"
+arm-none-eabi-size   Labb3_clk.elf 
+arm-none-eabi-objdump -h -S  Labb3_clk.elf  > "Labb3_clk.list"
    text	   data	    bss	    dec	    hex	filename
-  12688	     20	   1740	  14448	   3870	labb2_trafikljus.elf
+  17824	    120	   2048	  19992	   4e18	Labb3_clk.elf
 Finished building: default.size.stdout
  
-Finished building: labb2_trafikljus.list
- 
-16:05:07 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
-make -j8 all 
-arm-none-eabi-size   labb2_trafikljus.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12688	     20	   1740	  14448	   3870	labb2_trafikljus.elf
-Finished building: default.size.stdout
- 
-16:06:02 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
-make -j8 all 
-arm-none-eabi-size   labb2_trafikljus.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12688	     20	   1740	  14448	   3870	labb2_trafikljus.elf
-Finished building: default.size.stdout
- 
-16:07:24 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
-make -j8 all 
-arm-none-eabi-size   labb2_trafikljus.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12688	     20	   1740	  14448	   3870	labb2_trafikljus.elf
-Finished building: default.size.stdout
- 
-16:08:32 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
-make -j8 all 
-arm-none-eabi-size   labb2_trafikljus.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12688	     20	   1740	  14448	   3870	labb2_trafikljus.elf
-Finished building: default.size.stdout
- 
-16:09:22 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
-make -j8 all 
-arm-none-eabi-size   labb2_trafikljus.elf 
-   text	   data	    bss	    dec	    hex	filename
-  12688	     20	   1740	  14448	   3870	labb2_trafikljus.elf
-Finished building: default.size.stdout
- 
-16:12:43 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
-../Core/Src/stm32f4xx_it.c: In function 'SysTick_Handler':
-../Core/Src/stm32f4xx_it.c:190:26: error: expected ';' before '}' token
-  190 |      my_systick_handler()
-      |                          ^
-      |                          ;
-  191 |   /* USER CODE END SysTick_IRQn 1 */
-  192 | }
-      | ~                         
-make: *** [Core/Src/subdir.mk:34: Core/Src/stm32f4xx_it.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-16:13:19 **** Incremental Build of configuration Debug for project labb2_trafikljus ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
-arm-none-eabi-gcc -o "labb2_trafikljus.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\labb2_trafikljus\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb2_trafikljus.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: labb2_trafikljus.elf
- 
-arm-none-eabi-size   labb2_trafikljus.elf 
-arm-none-eabi-objdump -h -S  labb2_trafikljus.elf  > "labb2_trafikljus.list"
-   text	   data	    bss	    dec	    hex	filename
-  12736	     20	   1740	  14496	   38a0	labb2_trafikljus.elf
-Finished building: default.size.stdout
- 
-Finished building: labb2_trafikljus.list
+Finished building: Labb3_clk.list
  
