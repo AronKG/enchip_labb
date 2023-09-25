@@ -147,7 +147,7 @@ void qs_put_digits(uint8_t d0, uint8_t d1, uint8_t d2, uint8_t d3, uint8_t colon
 
 
 
-void qs_put_big_num(uint16_t big_num)
+void qs_put_big_num(uint16_t big_num,uint8_t colonOn )
 {
 	uint8_t ones = (big_num /    1) % 10;
 	uint8_t tens = (big_num /   10) % 10;

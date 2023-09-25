@@ -24,6 +24,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "quad_sseg.h"
+#include <stdbool.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,13 +48,33 @@ TIM_HandleTypeDef htim3;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
+// Function prototypes
+void updateClock();
+void updateDisplay();
+void handleRollovers();
+
 uint16_t button_exti_count;
 uint16_t button_debounced_count;
 uint16_t unhandled_exti;
 
-uint8_t hours = 0;
-uint8_t minutes = 0;
-uint8_t seconds = 0;
+uint8_t hours = 23;
+uint8_t minutes = 59;
+uint8_t seconds = 23;
+
+int display_hours_minutes = 0; // Flag for display mode (0: MM:SS, 1 HH:MM)
+
+//Time counter
+//uint16_t timeCounter = 0;
+
+//Flag for colon blinking
+uint8_t colonOn = 0;
+uint8_t hoursTens ;       // Hours (24-hour format)
+uint8_t hoursOnes;
+uint8_t minutesTens ;   // Minutes (modulo 60)
+uint8_t minutesOnes ;
+uint8_t secondsTens;   // Seconds (modulo 60)
+uint8_t secondsOnes ;
+
 
 
 TIM_HandleTypeDef htm;
@@ -105,10 +126,30 @@ void clock_mode()
 {
 	/*** init segment ***/
 	/*** main loop ***/
+	HAL_TIM_Base_Start_IT(&htim3);
+
+	 hours = 23;
+	 minutes = 59;
+	 seconds = 45;
+
 	while (1)
 	{
+		 // Update your clock variables based on TIM3 interrupts
+		        // ...
+
+		// Check if the blue button is held down to switch display mode
+		if(GPIO_PIN_RESET == HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin)){
+			display_hours_minutes = 1;   //Swithch to HH:MM
+		}
+		else{
+			display_hours_minutes = 0; // Back to MM:SS mode
+		}
+		updateDisplay();
+
+
 	}
 }
+
 
 void button_mode()
 {
@@ -140,17 +181,19 @@ void button_mode()
 		}
 
 		if(b1_pressed){
-			qs_put_big_num(button_exti_count);
+			qs_put_big_num(button_exti_count, 0);
 
 
 		}
 		else{
-			qs_put_big_num(button_debounced_count);
+			qs_put_big_num(button_debounced_count, 0);
 
 		}
 	}
 
 }
+
+
 
 //#define MY_BTN_Pin GPIO_PIN_2
 //#define MY_BTN_GPIO_Port GPIOC
@@ -164,6 +207,74 @@ void HAL_GPIO_EXTI_Callback( uint16_t GPIO_Pin )
 	}
 
 }
+
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+
+	if(htim->Instance == TIM3){
+		//This function will be called every half-second
+		// Update your clock variables here
+		//...
+		colonOn = !colonOn;
+		if(colonOn == 1){
+		seconds++;
+		}
+	}
+}
+
+void updateClock(){
+	//seconds++;        //Incriment seconds
+	handleRollovers();  // Handle rollovers
+}
+
+//Function to hanle rollovers
+
+void handleRollovers()
+{
+	if(seconds >= 60)
+	{
+		seconds = 0;
+		minutes++;
+		if(minutes >= 60)
+		{
+			minutes = 0;
+			hours++;
+			if(hours >= 24)
+			{
+				hours = 0;
+			}
+		}
+	}
+}
+
+void updateDisplay()
+{
+	// Toggle colon every half seconde
+
+
+	// Detrmain whether to diplay HH:MM or MM:SS
+	updateClock();
+
+	 hoursTens = (hours % 24) / 10;       // Hours (24-hour format)
+	 hoursOnes = (hours % 24) % 10;
+	 minutesTens = (minutes % 60) / 10;   // Minutes (modulo 60)
+	 minutesOnes = (minutes % 60) % 10;
+	 secondsTens = (seconds % 60) / 10;   // Seconds (modulo 60)
+	 secondsOnes = (seconds % 60) % 10;
+
+	if(display_hours_minutes)
+	{
+		//qs_put_big_num((uint16_t)(hours * 100 + minutes), colonOn);
+        qs_put_digits(hoursTens, hoursOnes, minutesTens, minutesOnes, colonOn);
+	}
+	else
+	{
+		//qs_put_big_num((uint16_t)(hours * 100 + minutes), colonOn);
+        qs_put_digits(minutesTens, minutesOnes, secondsTens, secondsOnes, colonOn);
+	}
+}
+
 
 /* USER CODE END 0 */
 

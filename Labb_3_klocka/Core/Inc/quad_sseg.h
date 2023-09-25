@@ -83,7 +83,7 @@ void qs_put_digits(
 /************************************************************
  *	Displays a big number, with leading blanks.
  ************************************************************/
-void qs_put_big_num(uint16_t big_num);
+void qs_put_big_num(uint16_t big_num, uint8_t colonOn);
 
 
 #endif /* SRC_QUAD_SSEG_H_ */
