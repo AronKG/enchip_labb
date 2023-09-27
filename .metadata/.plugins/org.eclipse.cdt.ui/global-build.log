@@ -19,3 +19,10 @@ arm-none-eabi-size   Labb3_clk.elf
   18680	    124	   2060	  20864	   5180	Labb3_clk.elf
 Finished building: default.size.stdout
  
+15:49:29 **** Incremental Build of configuration Debug for project Labb3_clk ****
+make -j8 all 
+arm-none-eabi-size   Labb3_clk.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18680	    124	   2060	  20864	   5180	Labb3_clk.elf
+Finished building: default.size.stdout
+ 
