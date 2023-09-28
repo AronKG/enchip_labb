@@ -1,9 +1,60 @@
-13:48:33 **** Incremental Build of configuration Debug for project labb4_LCD ****
+19:09:44 **** Incremental Build of configuration Debug for project labb4_LCD ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:25:10: fatal error: lcd.h: No such file or directory
+../Core/Src/main.c: In function 'cd_set':
+../Core/Src/main.c:81:24: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   81 |                 return 0;
+      |                        ^
+../Core/Src/main.c:73:6: note: declared here
+   73 | void cd_set(struct clock_data * pcd,uint8_t hrs,uint8_t min,uint8_t sec)
+      |      ^~~~~~
+../Core/Src/main.c:84:24: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   84 |                 return -1;
+      |                        ^
+../Core/Src/main.c:73:6: note: declared here
+   73 | void cd_set(struct clock_data * pcd,uint8_t hrs,uint8_t min,uint8_t sec)
+      |      ^~~~~~
+../Core/Src/main.c: In function 'uart_print_cd':
+../Core/Src/main.c:123:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  123 |         sprintf(buffer,"%02d:%02d:%02d\r\n",pcd->hours,pcd->minutes,pcd->seconds);
+      |         ^~~~~~~
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
    25 | #include "lcd.h"
-      |          ^~~~~~~
-compilation terminated.
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+../Core/Src/main.c:123:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  123 |         sprintf(buffer,"%02d:%02d:%02d\r\n",pcd->hours,pcd->minutes,pcd->seconds);
+      |         ^~~~~~~
+../Core/Src/main.c:123:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:201:18: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  201 |                  sprintf(timeStr,"%02d:%02d:%02d",my_clock.hours, my_clock.minutes, my_clock.seconds);
+      |                  ^~~~~~~
+../Core/Src/main.c:201:18: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:169:14: warning: unused variable 'LETTERS_TOTAL' [-Wunused-variable]
+  169 |   const char LETTERS_TOTAL = 'a' - 'd';   // Total number of uppercase letters
+      |              ^~~~~~~~~~~~~
+../Core/Src/main.c:168:14: warning: unused variable 'ASCII_CAPITAL_OFFSET' [-Wunused-variable]
+  168 |   const char ASCII_CAPITAL_OFFSET = 'R';   // Offset to convert to uppercase ASCII
+      |              ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:167:8: warning: unused variable 'c' [-Wunused-variable]
+  167 |   char c = 0;
+      |        ^
+arm-none-eabi-gcc -o "labb4_LCD.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\labb4_LCD\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb4_LCD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: labb4_LCD.elf
+ 
+arm-none-eabi-size   labb4_LCD.elf 
+arm-none-eabi-objdump -h -S  labb4_LCD.elf  > "labb4_LCD.list"
+   text	   data	    bss	    dec	    hex	filename
+  16352	    104	   2136	  18592	   48a0	labb4_LCD.elf
+Finished building: default.size.stdout
+ 
+Finished building: labb4_LCD.list
+ 
+19:09:53 **** Incremental Build of configuration Debug for project labb4_LCD ****
+make -j8 all 
+arm-none-eabi-size   labb4_LCD.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16352	    104	   2136	  18592	   48a0	labb4_LCD.elf
+Finished building: default.size.stdout
+ 

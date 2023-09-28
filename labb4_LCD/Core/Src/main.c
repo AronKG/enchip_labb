@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <string.h>
+#include "lcd.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -48,6 +49,7 @@ UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 uint8_t colonOn = 0;
+volatile uint8_t timerFlag = 0;
 
 /* USER CODE END PV */
 
@@ -108,7 +110,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 	if(htim->Instance == TIM3)
 	{
-		cd_tick(&my_clock);
+		timerFlag = 1;
 	}
 }
 
@@ -118,7 +120,7 @@ void uart_print_cd(UART_HandleTypeDef *huart, struct clock_data *pcd)
 	char buffer[20];
 
 	//Format the time with leading zeros of neede
-	sprintf(buffer,"%02d:%02d:%02d",pcd->hours,pcd->minutes,pcd->seconds);
+	sprintf(buffer,"%02d:%02d:%02d\r\n",pcd->hours,pcd->minutes,pcd->seconds);
 
 	//send the formatted string over UART
 	HAL_UART_Transmit(huart,(uint8_t*)buffer, strlen(buffer), HAL_MAX_DELAY);
@@ -161,19 +163,52 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   //careat and initalize a clock_data instance
+
+  char c = 0;
+  const char ASCII_CAPITAL_OFFSET = 'R';   // Offset to convert to uppercase ASCII
+  const char LETTERS_TOTAL = 'a' - 'd';   // Total number of uppercase letters
+
+
+
+
   struct clock_data my_clock;
 
   // Call the cd_set function to set the time
       cd_set(&my_clock, 23, 59, 45);
 
+      TextLCDType my_lcd;
+      TextLCD_Init(&my_lcd, &hi2c1,0x4E);
 
-  /* USER CODE END 2 */
+      //time start
+      HAL_TIM_Base_Start_IT(&htim3);
+
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      uart_print_cd(&huart2, &my_clock);
+	  //wait_for_button_press();              // Wait for a button press (not defined here)
+	  //TextLCD_PutChar(&my_lcd, c + ASCII_CAPITAL_OFFSET); // Send the character to the LCD
+	  //c = (c + 1) % LETTERS_TOTAL;         // Increment character and wrap around if needed
+
+
+	  if (timerFlag)
+	     {
+	         cd_tick(&my_clock);
+	         timerFlag = 0; // Reset the flag
+
+	         char timeStr[9]; //HH:MM:SS+null
+	         sprintf(timeStr,"%02d:%02d:%02d",my_clock.hours, my_clock.minutes, my_clock.seconds);
+
+	         //sending the time string to LCD
+	         TextLCD_Clear(&my_lcd);
+	         TextLCD_Position(&my_lcd,0,0);
+
+	         TextLCD_PutStr(&my_lcd, timeStr);
+
+	     }
+
+      //uart_print_cd(&huart2, &my_clock);
 
     /* USER CODE END WHILE */
 
@@ -281,9 +316,9 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 1 */
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 1000-1;
+  htim3.Init.Prescaler = 1282-1;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 65535;
+  htim3.Init.Period = 65535-1;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
