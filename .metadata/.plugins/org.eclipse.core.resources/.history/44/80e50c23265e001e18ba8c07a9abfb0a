@@ -181,8 +181,11 @@ int main(void)
 
   HAL_TIM_Base_Start_IT(&htim3);      //time start
 
-  int col=5;
+  int col=0;
   int row =1;
+  TextLCD_Position(&my_lcd,1,0);
+
+	         TextLCD_PutStr(&my_lcd, timeStr);
 
       /* USER CODE END 2 */
 
@@ -194,30 +197,30 @@ int main(void)
 	  //TextLCD_PutChar(&my_lcd, c + ASCII_CAPITAL_OFFSET); // Send the character to the LCD
 	  //c = (c + 1) % LETTERS_TOTAL;         // Increment character and wrap around if needed
 
-
+	  /*
 	  if (timerFlag)
 	     {
 	         cd_tick(&my_clock);
 	         timerFlag = 0; // Reset the flag
-
-	         if (my_clock.hours >= 24)
-				{
-					// Reset the clock to 00:00:00 after 23:59:59
-					cd_set(&my_clock, 0, 0, 0);
-				}
 
 	         char timeStr[9]; //HH:MM:SS+null
 	         sprintf(timeStr,"%02d:%02d:%02d",my_clock.hours, my_clock.minutes, my_clock.seconds);
 
 	         //sending the time string to LCD
 
-	         TextLCD_Position(&my_lcd,8,1);
+	         TextLCD_Position(&my_lcd,1,0);
 
 	         TextLCD_PutStr(&my_lcd, timeStr);
 
+	         col++;
 
+	         if(col > (15-strlen(timeStr)))
+	         {
+	        	 col = 0;
+	         }
 
 	     }
+	     */
 
       //uart_print_cd(&huart2, &my_clock);
 

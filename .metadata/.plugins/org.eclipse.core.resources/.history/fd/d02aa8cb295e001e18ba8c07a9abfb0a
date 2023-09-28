@@ -149,7 +149,7 @@ void TextLCD_SetDDRAMAdr(TextLCDType * hlcd, uint8_t adr)
 void TextLCD_Position(TextLCDType * hlcd, int col, int row)
 {
 	//set the cursor position
-	int row_offsets[] = {0x00, 0x40};
+	int row_offsets[] = {0x00, 0x04};
 
 	if(row >= 0 && row < 2)
 	{
