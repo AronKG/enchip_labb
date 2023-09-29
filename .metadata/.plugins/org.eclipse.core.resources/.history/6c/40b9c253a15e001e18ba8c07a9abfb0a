@@ -164,9 +164,9 @@ int main(void)
 
   //careat and initalize a clock_data instance
 
-  //char c = 0;
- // const char ASCII_CAPITAL_OFFSET = 'R';   // Offset to convert to uppercase ASCII
-  //const char LETTERS_TOTAL = 'a' - 'd';   // Total number of uppercase letters
+  char c = 0;
+  const char ASCII_CAPITAL_OFFSET = 'R';   // Offset to convert to uppercase ASCII
+  const char LETTERS_TOTAL = 'a' - 'd';   // Total number of uppercase letters
 
 
 
@@ -183,9 +183,6 @@ int main(void)
 
   int col=5;
   int row =1;
-
-  uint32_t dly = 5 * 1000 * 1000; // 5 sekunder
-  My_Delay(dly);
 
   /* USER CODE END 2 */
 
@@ -330,7 +327,7 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 84-1;
+  htim2.Init.Prescaler = 0;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim2.Init.Period = 4294967295;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;

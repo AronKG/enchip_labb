@@ -10,4 +10,4 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Labb3_clk\ Debug/activeLaunchTa
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:labb2_tarning\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:labb2_tarning\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:labb2_trafikljus\ Debug/activeLaunchMode=run
-org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:labb4_LCD\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:labb4_LCD\ Debug/activeLaunchMode=debug

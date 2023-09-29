@@ -828,3 +828,15 @@ java.io.FileNotFoundException: C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\l
 
 !ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-09-28 20:17:01.400
 !MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-09-29 10:05:25.062
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 58 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-09-29 10:05:25.070
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-09-29 10:05:25.077
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 58 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-09-29 10:05:25.083
+!MESSAGE Existing sessions are:

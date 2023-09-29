@@ -12,7 +12,7 @@
 void My_Delay(uint32_t mysec)
 {
 //	HAL_Delay( 1 + (mysec / 1000) );
-	uint32_t start_time = HAL_GetTick();
+	unit32_t start_time = HAL_GetTick();
 
 	//fördröjning räknare
 	uint32_t delay_ms = mysec/1000;

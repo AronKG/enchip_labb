@@ -164,9 +164,9 @@ int main(void)
 
   //careat and initalize a clock_data instance
 
-  //char c = 0;
- // const char ASCII_CAPITAL_OFFSET = 'R';   // Offset to convert to uppercase ASCII
-  //const char LETTERS_TOTAL = 'a' - 'd';   // Total number of uppercase letters
+  char c = 0;
+  const char ASCII_CAPITAL_OFFSET = 'R';   // Offset to convert to uppercase ASCII
+  const char LETTERS_TOTAL = 'a' - 'd';   // Total number of uppercase letters
 
 
 
