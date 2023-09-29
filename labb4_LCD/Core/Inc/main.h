@@ -87,7 +87,7 @@ void uart_print_cd(UART_HandleTypeDef *huart, struct clock_data *pcd);
 #define SWO_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

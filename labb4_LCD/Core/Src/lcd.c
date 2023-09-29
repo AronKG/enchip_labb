@@ -11,16 +11,16 @@
  */
 void My_Delay(uint32_t mysec)
 {
-//	HAL_Delay( 1 + (mysec / 1000) );
-	uint32_t start_time = HAL_GetTick();
+	TIM2->CR1 &= ~(0x01);  //disable timen
+	TIM2->CNT = 0; // reset the counter;
 
-	//fördröjning räknare
-	uint32_t delay_ms = mysec/1000;
+	TIM2->CR1 |= 0x01; // Enable the timer
 
-	while((HAL_GetTick() - start_time) < delay_ms)
-		{
+	while(TIM2->CNT < mysec)
+	{
 
-		}
+	}
+
 }
 
 #define BIT_BT   0x08

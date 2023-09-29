@@ -1,21 +1,49 @@
-10:48:19 **** Incremental Build of configuration Debug for project labb4_LCD ****
+14:23:09 **** Incremental Build of configuration Debug for project labb4_LCD ****
 make -j8 all 
+arm-none-eabi-gcc "../Core/Src/lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/lcd.d" -MT"Core/Src/lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd.o"
+arm-none-eabi-gcc -o "labb4_LCD.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\labb4_LCD\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb4_LCD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: labb4_LCD.elf
+ 
 arm-none-eabi-size   labb4_LCD.elf 
+arm-none-eabi-objdump -h -S  labb4_LCD.elf  > "labb4_LCD.list"
    text	   data	    bss	    dec	    hex	filename
-  15556	    104	   2136	  17796	   4584	labb4_LCD.elf
+  16688	    104	   2208	  19000	   4a38	labb4_LCD.elf
 Finished building: default.size.stdout
  
-10:48:34 **** Incremental Build of configuration Debug for project labb4_LCD ****
+Finished building: labb4_LCD.list
+ 
+14:23:24 **** Incremental Build of configuration Debug for project labb4_LCD ****
 make -j8 all 
 arm-none-eabi-size   labb4_LCD.elf 
    text	   data	    bss	    dec	    hex	filename
-  15556	    104	   2136	  17796	   4584	labb4_LCD.elf
+  16688	    104	   2208	  19000	   4a38	labb4_LCD.elf
 Finished building: default.size.stdout
  
-10:51:15 **** Incremental Build of configuration Debug for project labb4_LCD ****
+14:30:24 **** Incremental Build of configuration Debug for project labb4_LCD ****
 make -j8 all 
+arm-none-eabi-gcc "../Core/Src/lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/lcd.d" -MT"Core/Src/lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd.o"
+arm-none-eabi-gcc -o "labb4_LCD.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\labb4_LCD\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb4_LCD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: labb4_LCD.elf
+ 
 arm-none-eabi-size   labb4_LCD.elf 
+arm-none-eabi-objdump -h -S  labb4_LCD.elf  > "labb4_LCD.list"
    text	   data	    bss	    dec	    hex	filename
-  15556	    104	   2136	  17796	   4584	labb4_LCD.elf
+  16672	    104	   2208	  18984	   4a28	labb4_LCD.elf
 Finished building: default.size.stdout
+ 
+Finished building: labb4_LCD.list
+ 
+14:33:13 **** Incremental Build of configuration Debug for project labb4_LCD ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/lcd.d" -MT"Core/Src/lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd.o"
+arm-none-eabi-gcc -o "labb4_LCD.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\labb4_LCD\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb4_LCD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: labb4_LCD.elf
+ 
+arm-none-eabi-size   labb4_LCD.elf 
+arm-none-eabi-objdump -h -S  labb4_LCD.elf  > "labb4_LCD.list"
+   text	   data	    bss	    dec	    hex	filename
+  16672	    104	   2208	  18984	   4a28	labb4_LCD.elf
+Finished building: default.size.stdout
+ 
+Finished building: labb4_LCD.list
  
