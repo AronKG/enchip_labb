@@ -16,12 +16,11 @@ void My_Delay(uint32_t mysec)
 	TIM2->CNT = 0; // reset the counter;
 
 	TIM2->CR1 |= 0x01; // Enable the timer
-	HAL_GPIO_WritePin(LD2_GPIO_Port,LD2_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(LD2_GPIO_Port,LD2_Pin, HAL_PIN_SET);
 	while(TIM2->CNT < mysec)
 	{
 
 	}
-	HAL_GPIO_WritePin(LD2_GPIO_Port,LD2_Pin, GPIO_PIN_RESET);
 
 }
 

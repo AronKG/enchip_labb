@@ -1,6 +1,5 @@
 
 #include "lcd.h"
-#include "main.h"
 
 // first:   D7 D6 D5 D4 BT E  RW RS
 // second:  D3 D2 D1 D0 BT E  RW RS
@@ -16,12 +15,11 @@ void My_Delay(uint32_t mysec)
 	TIM2->CNT = 0; // reset the counter;
 
 	TIM2->CR1 |= 0x01; // Enable the timer
-	HAL_GPIO_WritePin(LD2_GPIO_Port,LD2_Pin, GPIO_PIN_SET);
+
 	while(TIM2->CNT < mysec)
 	{
 
 	}
-	HAL_GPIO_WritePin(LD2_GPIO_Port,LD2_Pin, GPIO_PIN_RESET);
 
 }
 
@@ -124,27 +122,6 @@ void TextLCD_Init(
 
 	TextLCD_SendByte(hlcd, 0x06, 0);
 	TextLCD_SendByte(hlcd, 0x0C, 0);
-
-
-	//some extra things
-	/*
-	uint32_t ld2Counter = 0;
-
-	    while (1)
-	    {
-	        // Blink LD2 every second
-	        if (ld2Counter >= 5)
-	        {
-	            HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin); // Toggle LD2
-	            ld2Counter = 0; // Reset the counter
-	        }
-
-	        // Delay for 1 second (multiply by 1,000,000 for microseconds)
-	        My_Delay(1000000); // Delay for 1 second
-
-	        ld2Counter++;
-	    }
-	    */
 }
 
 

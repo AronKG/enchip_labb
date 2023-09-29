@@ -112,7 +112,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 	if(htim->Instance == TIM3)
 	{
-		timerFlag++;
+		timerFlag = 1;
 	}
 }
 
@@ -199,10 +199,10 @@ int main(void)
 	 // TextLCD_PutChar(&my_lcd, c + ASCII_CAPITAL_OFFSET); // Send the character to the LCD
 	  //c = (c + 1) % LETTERS_TOTAL;         // Increment character and wrap around if needed
 
-	  if (timerFlag > 0)
+	  if (timerFlag)
 	     {
 	         cd_tick(&my_clock);
-	         timerFlag--; // Reset the flag
+	         timerFlag = 0; // Reset the flag
 
 	         if (my_clock.hours >= 24)
 				{
