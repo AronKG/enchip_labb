@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="TextLCDType"/>
 		<list key="findhistory">
+			<item value="TextLCDType"/>
 			<item value="HAL_TIM_PWM_St"/>
 			<item value="TIM_HandleType"/>
 			<item value=" TIM_HandleType"/>

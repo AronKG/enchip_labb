@@ -126,7 +126,25 @@ void TextLCD_Init(
 	TextLCD_SendByte(hlcd, 0x0C, 0);
 
 
+	//some extra things
+	/*
+	uint32_t ld2Counter = 0;
 
+	    while (1)
+	    {
+	        // Blink LD2 every second
+	        if (ld2Counter >= 5)
+	        {
+	            HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin); // Toggle LD2
+	            ld2Counter = 0; // Reset the counter
+	        }
+
+	        // Delay for 1 second (multiply by 1,000,000 for microseconds)
+	        My_Delay(1000000); // Delay for 1 second
+
+	        ld2Counter++;
+	    }
+	    */
 }
 
 
