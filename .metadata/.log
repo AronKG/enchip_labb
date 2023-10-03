@@ -933,3 +933,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-03 13:10:14.761
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-03 19:10:39.636
+!MESSAGE Indexed 'labb5_ADC' (22 sources, 82 headers) in 2.6 sec: 4,742 declarations; 22,752 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0073%)
