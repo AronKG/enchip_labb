@@ -1,1 +1,7 @@
-timerFlag
+adc_value
+adc_buffer[0]
+adc_buf_ix
+adc_buffer[adc_buf_ix]
+adc_buffer[1]
+counter
+adc_buffer[2]

@@ -191,8 +191,8 @@ int main(void)
 
   HAL_ADC_Start_IT(&hadc1);
 
-  //uint16_t adc_value;
-  //float normalized;
+  uint16_t adc_value;
+  float normalized;
 
 
 
