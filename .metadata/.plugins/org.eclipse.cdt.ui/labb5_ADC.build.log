@@ -1,0 +1,24 @@
+15:38:15 **** Incremental Build of configuration Debug for project labb5_ADC ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:195:9: warning: unused variable 'normalized' [-Wunused-variable]
+  195 |   float normalized;
+      |         ^~~~~~~~~~
+../Core/Src/main.c:194:12: warning: unused variable 'adc_value' [-Wunused-variable]
+  194 |   uint16_t adc_value;
+      |            ^~~~~~~~~
+arm-none-eabi-gcc -o "labb5_ADC.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\labb5_ADC\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb5_ADC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: labb5_ADC.elf
+ 
+arm-none-eabi-size   labb5_ADC.elf 
+arm-none-eabi-objdump -h -S  labb5_ADC.elf  > "labb5_ADC.list"
+   text	   data	    bss	    dec	    hex	filename
+  32004	    480	   2232	  34716	   879c	labb5_ADC.elf
+Finished building: default.size.stdout
+ 
+Finished building: labb5_ADC.list
+ 
+
+15:38:16 Build Finished. 0 errors, 2 warnings. (took 1s.510ms)
+

@@ -1,4 +1,4 @@
-15:49:29 **** Incremental Build of configuration Debug for project Labb3_clk ****
+19:08:04 **** Incremental Build of configuration Debug for project Labb3_clk ****
 make -j8 all 
 arm-none-eabi-size   Labb3_clk.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   Labb3_clk.elf
 Finished building: default.size.stdout
  
 
-15:49:29 Build Finished. 0 errors, 0 warnings. (took 901ms)
+19:08:04 Build Finished. 0 errors, 0 warnings. (took 764ms)
 
