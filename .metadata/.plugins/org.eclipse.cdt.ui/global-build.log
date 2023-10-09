@@ -1,14 +1,167 @@
-21:04:55 **** Build of configuration Debug for project labb5_ADC ****
+15:24:18 **** Incremental Build of configuration Debug for project Labb6_PWM ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "labb5_ADC.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\labb5_ADC\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb5_ADC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: labb5_ADC.elf
+arm-none-eabi-gcc -o "Labb6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\Labb6_PWM\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Labb6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Labb6_PWM.elf
  
+arm-none-eabi-size   Labb6_PWM.elf 
+arm-none-eabi-objdump -h -S  Labb6_PWM.elf  > "Labb6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  19168	     24	   1728	  20920	   51b8	Labb6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: Labb6_PWM.list
+ 
+
+15:24:19 Build Finished. 0 errors, 0 warnings. (took 1s.529ms)
+
+15:25:00 **** Incremental Build of configuration Debug for project Labb6_PWM ****
+make -j8 all 
+arm-none-eabi-size   Labb6_PWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19168	     24	   1728	  20920	   51b8	Labb6_PWM.elf
+Finished building: default.size.stdout
+ 
+15:32:21 **** Incremental Build of configuration Debug for project Labb6_PWM ****
+make -j8 all 
+arm-none-eabi-size   Labb6_PWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19168	     24	   1728	  20920	   51b8	Labb6_PWM.elf
+Finished building: default.size.stdout
+ 
+15:39:35 **** Incremental Build of configuration Debug for project Labb6_PWM ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Labb6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\Labb6_PWM\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Labb6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Labb6_PWM.elf
+ 
+arm-none-eabi-size   Labb6_PWM.elf 
+arm-none-eabi-objdump -h -S  Labb6_PWM.elf  > "Labb6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  19176	     24	   1728	  20928	   51c0	Labb6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: Labb6_PWM.list
+ 
+15:40:27 **** Incremental Build of configuration Debug for project Labb6_PWM ****
+make -j8 all 
+arm-none-eabi-size   Labb6_PWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19176	     24	   1728	  20928	   51c0	Labb6_PWM.elf
+Finished building: default.size.stdout
+ 
+17:50:03 **** Build of configuration Debug for project Labb3_clk ****
+make -j8 all 
+arm-none-eabi-size   Labb3_clk.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18680	    124	   2060	  20864	   5180	Labb3_clk.elf
+Finished building: default.size.stdout
+ 
+17:50:05 **** Incremental Build of configuration Debug for project Labb6_PWM ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Labb6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\Labb6_PWM\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Labb6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Labb6_PWM.elf
+ 
+arm-none-eabi-size   Labb6_PWM.elf 
+arm-none-eabi-objdump -h -S  Labb6_PWM.elf  > "Labb6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  19176	     24	   1728	  20928	   51c0	Labb6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: Labb6_PWM.list
+ 
+17:50:12 **** Build of configuration Debug for project labb2_tarning ****
+make -j8 all 
+arm-none-eabi-size   labb2_tarning.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13484	    112	   1976	  15572	   3cd4	labb2_tarning.elf
+Finished building: default.size.stdout
+ 
+17:50:14 **** Build of configuration Debug for project labb2_trafikljus ****
+make -j8 all 
+arm-none-eabi-size   labb2_trafikljus.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12736	     20	   1740	  14496	   38a0	labb2_trafikljus.elf
+Finished building: default.size.stdout
+ 
+17:50:17 **** Build of configuration Debug for project labb4_LCD ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'cd_set':
+../Core/Src/main.c:83:24: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   83 |                 return 0;
+      |                        ^
+../Core/Src/main.c:75:6: note: declared here
+   75 | void cd_set(struct clock_data * pcd,uint8_t hrs,uint8_t min,uint8_t sec)
+      |      ^~~~~~
+../Core/Src/main.c:86:24: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   86 |                 return -1;
+      |                        ^
+../Core/Src/main.c:75:6: note: declared here
+   75 | void cd_set(struct clock_data * pcd,uint8_t hrs,uint8_t min,uint8_t sec)
+      |      ^~~~~~
+../Core/Src/main.c: In function 'uart_print_cd':
+../Core/Src/main.c:125:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  125 |         sprintf(buffer,"%02d:%02d:%02d\r\n",pcd->hours,pcd->minutes,pcd->seconds);
+      |         ^~~~~~~
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   25 | #include "lcd.h"
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+../Core/Src/main.c:125:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  125 |         sprintf(buffer,"%02d:%02d:%02d\r\n",pcd->hours,pcd->minutes,pcd->seconds);
+      |         ^~~~~~~
+../Core/Src/main.c:125:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:214:18: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  214 |                  sprintf(timeStr,"%02d:%02d:%02d",my_clock.hours, my_clock.minutes, my_clock.seconds);
+      |                  ^~~~~~~
+../Core/Src/main.c:214:18: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:188:7: warning: unused variable 'row' [-Wunused-variable]
+  188 |   int row =1;
+      |       ^~~
+../Core/Src/main.c:187:7: warning: unused variable 'col' [-Wunused-variable]
+  187 |   int col=5;
+      |       ^~~
+../Core/Src/main.c:172:13: warning: unused variable 'LETTERS_TOTAL' [-Wunused-variable]
+  172 |  const char LETTERS_TOTAL = 'a' - 'd';   // Total number of uppercase letters
+      |             ^~~~~~~~~~~~~
+../Core/Src/main.c:171:13: warning: unused variable 'ASCII_CAPITAL_OFFSET' [-Wunused-variable]
+  171 |  const char ASCII_CAPITAL_OFFSET = 'R';   // Offset to convert to uppercase ASCII
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:170:8: warning: unused variable 'c' [-Wunused-variable]
+  170 |   char c = 0;
+      |        ^
+arm-none-eabi-gcc -o "labb4_LCD.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\labb4_LCD\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="labb4_LCD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: labb4_LCD.elf
+ 
+arm-none-eabi-size   labb4_LCD.elf 
+arm-none-eabi-objdump -h -S  labb4_LCD.elf  > "labb4_LCD.list"
+   text	   data	    bss	    dec	    hex	filename
+  16708	    104	   2208	  19020	   4a4c	labb4_LCD.elf
+Finished building: default.size.stdout
+ 
+Finished building: labb4_LCD.list
+ 
+17:50:25 **** Incremental Build of configuration Debug for project labb5_ADC ****
+make -j8 all 
 arm-none-eabi-size   labb5_ADC.elf 
-arm-none-eabi-objdump -h -S  labb5_ADC.elf  > "labb5_ADC.list"
    text	   data	    bss	    dec	    hex	filename
   32004	    480	   2232	  34716	   879c	labb5_ADC.elf
 Finished building: default.size.stdout
  
-Finished building: labb5_ADC.list
+18:41:24 **** Incremental Build of configuration Debug for project Labb6_PWM ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Labb6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\Labb6_PWM\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Labb6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Labb6_PWM.elf
+ 
+arm-none-eabi-size   Labb6_PWM.elf 
+arm-none-eabi-objdump -h -S  Labb6_PWM.elf  > "Labb6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  19176	     24	   1728	  20928	   51c0	Labb6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: Labb6_PWM.list
  
