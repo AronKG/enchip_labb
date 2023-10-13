@@ -1,17 +1,10 @@
-18:41:24 **** Incremental Build of configuration Debug for project Labb6_PWM ****
+11:11:51 **** Incremental Build of configuration Debug for project Labb6_PWM ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "Labb6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Aron\Desktop\Echipsdatorer\enchip_labb\Labb6_PWM\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Labb6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Labb6_PWM.elf
- 
 arm-none-eabi-size   Labb6_PWM.elf 
-arm-none-eabi-objdump -h -S  Labb6_PWM.elf  > "Labb6_PWM.list"
    text	   data	    bss	    dec	    hex	filename
   19176	     24	   1728	  20928	   51c0	Labb6_PWM.elf
 Finished building: default.size.stdout
  
-Finished building: Labb6_PWM.list
- 
 
-18:41:26 Build Finished. 0 errors, 0 warnings. (took 2s.10ms)
+11:11:52 Build Finished. 0 errors, 0 warnings. (took 879ms)
 

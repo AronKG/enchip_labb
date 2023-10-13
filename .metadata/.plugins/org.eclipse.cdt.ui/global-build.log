@@ -165,3 +165,17 @@ Finished building: default.size.stdout
  
 Finished building: Labb6_PWM.list
  
+11:09:51 **** Build of configuration Debug for project Labb6_PWM ****
+make -j8 all 
+arm-none-eabi-size   Labb6_PWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19176	     24	   1728	  20928	   51c0	Labb6_PWM.elf
+Finished building: default.size.stdout
+ 
+11:11:51 **** Incremental Build of configuration Debug for project Labb6_PWM ****
+make -j8 all 
+arm-none-eabi-size   Labb6_PWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19176	     24	   1728	  20928	   51c0	Labb6_PWM.elf
+Finished building: default.size.stdout
+ 
